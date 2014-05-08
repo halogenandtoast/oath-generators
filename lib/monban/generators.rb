@@ -1,7 +1,7 @@
 require "monban/generators/version"
+require "monban"
 
 module Monban
   module Generators
-    # Your code goes here...
   end
 end
