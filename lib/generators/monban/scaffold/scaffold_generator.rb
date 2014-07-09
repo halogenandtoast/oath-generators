@@ -30,7 +30,8 @@ module Monban
       end
 
       def add_model
-        generate 'model', 'user email password_digest'
+        template 'app/models/user.rb', 'app/models/user.rb'
+        migration_template "db/migrate/create_users.rb", "db/migrate/create_users.rb"
       end
 
       def display_readme
