@@ -1,0 +1,4 @@
+## HEAD
+* Fixed Version Constraint
+* Made User model have validations by default to disallow NULL values
+* Added NEWS.md
