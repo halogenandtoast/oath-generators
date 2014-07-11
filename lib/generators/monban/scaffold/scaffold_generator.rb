@@ -34,6 +34,10 @@ module Monban
         migration_template "db/migrate/create_users.rb", "db/migrate/create_users.rb"
       end
 
+      def add_translations
+        template "config/locales/monban.en.yml"
+      end
+
       def display_readme
         readme 'scaffold_readme'
       end

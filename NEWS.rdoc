@@ -1,4 +1,8 @@
 ## HEAD
+* Added locale file to generator
+* Added display of error messages on users#new
+
+## 0.0.3
 * Fixed Version Constraint
 * Made User model have validations by default to disallow NULL values
 * Added NEWS.md
