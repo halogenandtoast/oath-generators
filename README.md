@@ -33,6 +33,15 @@ This will generate the necessary files for an implementation of resetting
 a user's password. It will ask you for host names for development, test
 and production environments in order to make the mailer work.
 
+### Google Oauth 2
+
+If you'd like setup basic google oauth authentication, you can run:
+
+    rails g monban:google_oauth2
+
+This will generate the necessary files for an implementation of allowing users
+to sign in either with an email/password or by using google oauth2.
+
 ## Contributing
 
 1. [Fork it](http://github.com/halogenandtoast/monban-generators/fork)
