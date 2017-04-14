@@ -1,3 +1,6 @@
+## 0.0.6
+* Add Google Oauth2
+
 ## 0.0.5
 * Add `raise: false` to `before_action`s for Rails 5 compatibility
 
