@@ -15,7 +15,7 @@ And then execute:
 
 ## Generators
 
-Currently there are two generators available, but over time more will be added:
+Currently these are the generators available:
 
 ### Scaffold
 
