@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'monban/generators/version'
+require 'oath/generators/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "monban-generators"
-  spec.version       = Monban::Generators::VERSION
+  spec.name          = "oath-generators"
+  spec.version       = Oath::Generators::VERSION
   spec.authors       = ["halogenandtoast"]
   spec.email         = ["halogenandtoast@gmail.com"]
-  spec.summary       = %q{Rails generators for the monban authentication library}
+  spec.summary       = %q{Rails generators for the oath authentication library}
   spec.description   = %q{Generators to add in different forms of user authentication to a rails application.}
-  spec.homepage      = "http://github.com/halogenandtoast/monban-generators"
+  spec.homepage      = "http://github.com/halogenandtoast/oath-generators"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
-  spec.add_dependency "monban", ">= 0.0.12"
+  spec.add_dependency "oath", ">= 0.0.12"
 end

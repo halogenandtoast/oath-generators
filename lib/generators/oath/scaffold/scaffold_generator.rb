@@ -1,11 +1,11 @@
 require 'rails/generators/active_record'
-require 'generators/monban/migration/version'
+require 'generators/oath/migration/version'
 
-module Monban
+module Oath
   module Generators
     class ScaffoldGenerator < Rails::Generators::Base
       include Rails::Generators::Migration
-      include Monban::Generators::Migration
+      include Oath::Generators::Migration
 
       source_root File.expand_path("../../templates", __FILE__)
 
@@ -25,7 +25,7 @@ module Monban
       end
 
       def add_helper_module_to_application_controller
-        inject_into_class "app/controllers/application_controller.rb", ApplicationController, "  include Monban::ControllerHelpers\n"
+        inject_into_class "app/controllers/application_controller.rb", ApplicationController, "  include Oath::ControllerHelpers\n"
       end
 
       def self.next_migration_number(dir)
@@ -38,7 +38,7 @@ module Monban
       end
 
       def add_translations
-        template "config/locales/monban.en.yml"
+        template "config/locales/oath.en.yml"
       end
 
       def display_readme

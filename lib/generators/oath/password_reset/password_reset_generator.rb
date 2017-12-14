@@ -1,11 +1,11 @@
 require 'rails/generators/active_record'
-require 'generators/monban/migration/version'
+require 'generators/oath/migration/version'
 
-module Monban
+module Oath
   module Generators
     class PasswordResetGenerator < Rails::Generators::Base
       include Rails::Generators::Migration
-      include Monban::Generators::Migration
+      include Oath::Generators::Migration
 
       source_root File.expand_path("../../templates", __FILE__)
 

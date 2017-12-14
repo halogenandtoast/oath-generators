@@ -20,7 +20,7 @@ class ExternalAuthentication
   end
 
   def create_user
-    Monban::Services::SignUp.new(user_params).perform
+    Oath::Services::SignUp.new(user_params).perform
   end
 
   def transaction(&block)

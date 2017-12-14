@@ -1,4 +1,4 @@
-module Monban
+module Oath
   module Generators
     module Migration
       def migration_version
